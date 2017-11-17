@@ -12,7 +12,6 @@ int main(int argc, char * argv[]) {
 		std::cout << "URL don't enter";
 		return 0;
 	} 
-
 	CURL * curl = curl_easy_init();
 	if (curl) {
 		curl_easy_setopt(curl, CURLOPT_URL, "https://www.yandex.ru");  //указатель на URL
