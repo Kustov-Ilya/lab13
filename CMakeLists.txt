@@ -11,8 +11,8 @@ HunterGate(
 
 project(cget)
 
-hunter_add_package(CGET)
-find_package(CGET CONFIG REQUIRED)
+hunter_add_package(CURL)
+find_package(CURL CONFIG REQUIRED)
 
 add_executable(curl ${CMAKE_CURRENT_SOURCE_DIR}/cget.cpp)
 target_link_libraries(curl CURL::libcurl)
