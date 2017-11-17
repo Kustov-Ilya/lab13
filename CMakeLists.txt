@@ -15,4 +15,4 @@ hunter_add_package(CURL)
 find_package(CURL CONFIG REQUIRED)
 
 add_executable(cget ${CMAKE_CURRENT_SOURCE_DIR}/cget.cpp)
-target_link_libraries(curl CURL::libcurl)
+target_link_libraries(cget CURL::libcurl)
