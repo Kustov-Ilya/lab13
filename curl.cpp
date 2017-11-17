@@ -15,7 +15,7 @@ int main(int argc, char * argv[]) {
 
 	CURL * curl = curl_easy_init();
 	if (curl) {
-		curl_easy_setopt(curl, CURLOPT_URL, URL);  //указатель на URL
+		curl_easy_setopt(curl, CURLOPT_URL, "https://www.yandex.ru");  //указатель на URL
 		curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, false);  //не проверять сертификат по протоколу SSL
 		curl_easy_setopt(curl, CURLOPT_NOBODY, 1); //не включает документы 
 		long response_code; 
