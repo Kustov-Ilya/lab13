@@ -9,10 +9,10 @@ HunterGate(
     SHA1 "ef53eaa092c18d1ae26299daa4ea84d0f1d979ef"
 )
 
-project(curl)
+project(cget)
 
-hunter_add_package(CURL)
-find_package(CURL CONFIG REQUIRED)
+hunter_add_package(CGET)
+find_package(CGET CONFIG REQUIRED)
 
-add_executable(curl ${CMAKE_CURRENT_SOURCE_DIR}/curl.cpp)
+add_executable(curl ${CMAKE_CURRENT_SOURCE_DIR}/cget.cpp)
 target_link_libraries(curl CURL::libcurl)
