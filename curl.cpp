@@ -32,9 +32,6 @@ int main(int argc, char * argv[]) {
 			curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &response_code);
 			std::cout << response_code << std::endl;
 		}
-		else {
-			std::cout << "The code is not successful" << std::endl;
-		}
 		curl_easy_cleanup(curl);
 	}
 	return 0;
