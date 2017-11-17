@@ -4,20 +4,20 @@
 #include <curl/curl.h>
 
 int main(int argc, char * argv[]) {
-	std::string URL;
+	/*std::string URL;
 	if (argc > 1) {
 		URL = argv[1];
 	}
 	else {
 		std::cout << "URL don't enter";
 		return 0;
-	}
+	}*/ //Чтобы через Travis собралось
 
 	CURL * curl = curl_easy_init();
 	if (curl) {
 		curl_easy_setopt(curl, CURLOPT_URL, "https://www.yandex.ru");  //указатель на URL
 		curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, false);  //не проверять сертификат по протоколу SSL
-		curl_easy_setopt(curl, CURLOPT_NOBODY, 1); //не включает документы 
+		curl_easy_setopt(curl, CURLOPT_NOBODY, true); //не включает документы 
 		long response_code; 
 		std::promise<CURLcode> processing;		//обработчик потока 
 		std::future<CURLcode> response = processing.get_future();
