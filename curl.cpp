@@ -4,14 +4,14 @@
 #include <curl/curl.h>
 
 int main(int argc, char * argv[]) {
-	/*std::string URL;
+	std::string URL;
 	if (argc > 1) {
 		URL = argv[1];
 	}
 	else {
 		std::cout << "URL don't enter";
 		return 0;
-	}*/ //Чтобы через Travis собралось
+	} 
 
 	CURL * curl = curl_easy_init();
 	if (curl) {
