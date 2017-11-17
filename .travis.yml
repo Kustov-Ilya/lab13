@@ -1,0 +1,9 @@
+language: cpp
+
+notifications:
+  email: false
+
+script:   
+- cmake -H. -B_build
+- cmake --build _build
+- _build/curl
