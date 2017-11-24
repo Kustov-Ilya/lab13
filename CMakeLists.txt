@@ -11,8 +11,8 @@ HunterGate(
 
 project(cget)
 
-hunter_add_package(CURL)
-find_package(CURL CONFIG REQUIRED)
+hunter_add_package(nlohmann_json)
+find_package(nlohmann_json CONFIG REQUIRED)
+target_link_libraries(... nlohmann_json)
 
 add_executable(cget ${CMAKE_CURRENT_SOURCE_DIR}/cget.cpp)
-target_link_libraries(cget CURL::libcurl)
