@@ -22,7 +22,7 @@ struct Person {
 void Print(Person &pers) {
 	std::cout << "First Name: " << pers.first_name << std::endl;
 	std::cout << "Last Name: " << pers.last_name << std::endl;
-	std::cout << "Mail" << pers.email.nickname << "@" << pers.email.server << ".ru" << std::endl;
+	std::cout << "Mail" << pers.email.nickname << "@" << pers.email.server <<  std::endl;
 	std::cout << "Age: " << pers.age << std::endl;
 }
 
