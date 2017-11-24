@@ -9,10 +9,11 @@ HunterGate(
     SHA1 "affff3092b27bdc5cbb96fca80c37c2673475886"
 )
 
-project(cget)
-
+project(pack)
 hunter_add_package(nlohmann_json)
 find_package(nlohmann_json CONFIG REQUIRED)
-target_link_libraries(... nlohmann_json)
 
-add_executable(cget ${CMAKE_CURRENT_SOURCE_DIR}/cget.cpp)
+add_executable(pack ${CMAKE_CURRENT_SOURCE_DIR}/sources/pack.cpp)
+target_link_libraries(pack nlohmann_json)
+add_executable(unpack ${CMAKE_CURRENT_SOURCE_DIR}/sources/unpack.cpp)
+target_link_libraries(unpack nlohmann_json)
