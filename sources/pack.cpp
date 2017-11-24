@@ -10,7 +10,7 @@ using json = nlohmann::json;
 
 struct Email {
 	std::string nickname = "Antonio";
-	std::string server = "mail.ru";
+	std::string server = "yandex.ru";
 };
 
 struct Person {
