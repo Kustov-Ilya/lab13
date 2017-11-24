@@ -6,7 +6,7 @@ $jsonlint file.json
   "last_name": "Antonov",
 "email": {
     "nickname": "Antonio",
-    "server": "mail"
+    "server": "yandex.ru"
   }
   "age": 34,
   "phone": "8-999-999-00-00",
